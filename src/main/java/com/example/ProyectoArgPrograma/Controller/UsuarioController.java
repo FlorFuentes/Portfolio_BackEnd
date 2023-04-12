@@ -42,8 +42,6 @@ public class UsuarioController {
         //usuarioServ.editarUsuario(id);
     //}
     
-    
-    //CHATGPT
     @PutMapping("/editar/{id}")
     public void editarUsuario(@PathVariable Long id, @RequestBody Usuario usuarioActualizado){
         usuarioActualizado.setId(id); //Aseguramos que el objeto tenga el ID correcto

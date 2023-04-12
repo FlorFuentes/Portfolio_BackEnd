@@ -11,7 +11,7 @@ public interface IUsuarioService {
     public void crearUsuario(Usuario Usu);
     public void borrarUsuario(Long id);
     //public void editarUsuario(Long id);
-    //CHATGPT
+
     void editarUsuario(Usuario usuarioActualizado);
     
 }

@@ -1,4 +1,3 @@
-
 package com.example.ProyectoArgPrograma.service;
 
 import com.example.ProyectoArgPrograma.model.Usuario;
@@ -33,7 +32,7 @@ public class UsuarioService implements IUsuarioService {
         // usuRepo.findById(id).orElse(null);
     //}
     
-    //CHATGPT
+    
     @Override
     public void editarUsuario(Usuario usuarioActualizado) {
         usuRepo.save(usuarioActualizado);
