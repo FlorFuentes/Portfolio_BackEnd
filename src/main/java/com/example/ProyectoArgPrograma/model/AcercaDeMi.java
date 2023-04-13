@@ -9,23 +9,21 @@ import lombok.Setter;
 
 @Getter @Setter
 @Entity
-public class Usuario {
+public class AcercaDeMi {
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String nombre;
-    private String email;
-    private String password;
+    private String fotoPerfil;
+    private String sobreMi;
 
-    public Usuario() {
+    public AcercaDeMi() {
     }
 
-    public Usuario(Long id, String nombre, String email, String password) {
+    public AcercaDeMi(Long id, String fotoPerfil, String sobreMi) {
         this.id = id;
-        this.nombre = nombre;
-        this.email = email;
-        this.password = password;
+        this.fotoPerfil = fotoPerfil;
+        this.sobreMi = sobreMi;
     }
     
 }

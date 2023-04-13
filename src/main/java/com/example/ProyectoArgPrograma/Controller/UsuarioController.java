@@ -21,18 +21,18 @@ public class UsuarioController {
     @Autowired
     private IUsuarioService usuarioServ;
     
-    @PostMapping("/new/usuario")
+    @PostMapping("usuario/new")
     public void agregarUsuario( @RequestBody Usuario Usu){
         usuarioServ.crearUsuario(Usu);
     }
     
-    @GetMapping ("/ver/usuarios")
+    @GetMapping ("usuarios/ver")
     @ResponseBody
     public List<Usuario>  verUsuarios(){
        return usuarioServ.verUsuario();
     }
     
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping("usuario/delete/{id}")
     public void borrarUsuario(@PathVariable  Long id){
         usuarioServ.borrarUsuario(id);
     }
@@ -42,9 +42,9 @@ public class UsuarioController {
         //usuarioServ.editarUsuario(id);
     //}
     
-    @PutMapping("/editar/{id}")
-    public void editarUsuario(@PathVariable Long id, @RequestBody Usuario usuarioActualizado){
-        usuarioActualizado.setId(id); //Aseguramos que el objeto tenga el ID correcto
-        usuarioServ.editarUsuario(usuarioActualizado);
+    @PutMapping("usuario/editar/{id}")
+    public void editarUsuario(@RequestBody Usuario Usu ){
+        usuarioServ.editarUsuario(Usu); //Aseguramos que el objeto tenga el ID correcto
+        
     }
 }

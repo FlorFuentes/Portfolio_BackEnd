@@ -27,15 +27,9 @@ public class UsuarioService implements IUsuarioService {
        usuRepo.deleteById(id);
     }
 
-    //@Override
-    //public void editarUsuario(Long id) {
-        // usuRepo.findById(id).orElse(null);
-    //}
-    
-    
     @Override
-    public void editarUsuario(Usuario usuarioActualizado) {
-        usuRepo.save(usuarioActualizado);
+    public void editarUsuario(Usuario Usu) {
+         usuRepo.save(Usu);
     }
     
 }

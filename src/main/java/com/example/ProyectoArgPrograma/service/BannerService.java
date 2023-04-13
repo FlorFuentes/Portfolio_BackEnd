@@ -1,34 +1,36 @@
 package com.example.ProyectoArgPrograma.service;
 
+import com.example.ProyectoArgPrograma.model.Banner;
 import com.example.ProyectoArgPrograma.repository.BannerRepository;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.Banner;
 import org.springframework.stereotype.Service;
 
 @Service
-public class BannerService {
+public class BannerService implements IBannerService {
     
     @Autowired
-    public BannerRepository bannRepo;
+    public BannerRepository banRepo;
     
- 
+   
+
+    @Override
     public List<Banner> verBanner() {
-        return bannRepo.findAll();
+        return banRepo.findAll();
     }
 
-    
-    public void crearBanner(Banner bann) {
-       bannRepo.save(bann);
+    @Override
+    public void crearBanner(Banner ban) {
+        banRepo.save(ban);
     }
 
-    
-    public void borrarBanner(Long id) {
-       bannRepo.deleteById(id);
+    @Override
+    public void borarBanner(Long id) {
+        banRepo.deleteById(id);
     }
-    
-    public void editarBanner(Banner bannerActualizado) {
-        bannRepo.save(bannerActualizado);
+
+    @Override
+    public void editarBanner(Banner ban) {
+        banRepo.save(ban);
     }
-    
 }
