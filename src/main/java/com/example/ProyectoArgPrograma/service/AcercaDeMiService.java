@@ -23,7 +23,7 @@ public class AcercaDeMiService implements IAcercaDeMiService{
     }
 
     @Override
-    public void borarAcercaDeMi(Long id) {
+    public void borrarAcercaDeMi(Long id) {
        acercaRepo.deleteById(id);
     }
 

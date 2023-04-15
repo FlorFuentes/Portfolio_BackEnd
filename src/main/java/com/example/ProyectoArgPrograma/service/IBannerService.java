@@ -7,7 +7,7 @@ public interface IBannerService {
     
     public List<Banner> verBanner();
     public void crearBanner(Banner ban);
-    public void borarBanner(Long id);
+    public void borrarBanner(Long id);
     public void editarBanner(Banner ban);
     
 }

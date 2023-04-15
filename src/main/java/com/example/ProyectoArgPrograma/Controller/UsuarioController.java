@@ -3,7 +3,6 @@ package com.example.ProyectoArgPrograma.Controller;
 
 import com.example.ProyectoArgPrograma.model.Usuario;
 import com.example.ProyectoArgPrograma.service.IUsuarioService;
-//import java.util.ArrayList;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -44,7 +43,7 @@ public class UsuarioController {
     
     @PutMapping("usuario/editar/{id}")
     public void editarUsuario(@RequestBody Usuario Usu ){
-        usuarioServ.editarUsuario(Usu); //Aseguramos que el objeto tenga el ID correcto
+        usuarioServ.editarUsuario(Usu); 
         
     }
 }

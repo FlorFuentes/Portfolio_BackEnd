@@ -33,7 +33,7 @@ public class AcercaDeMiController {
     
     @DeleteMapping("acercaDeMi/delete/{id}")
     public void borrarAcercaDeMi(@PathVariable  Long id){
-        acercaServ.borarAcercaDeMi(id);
+        acercaServ.borrarAcercaDeMi(id);
     }
     
     @PutMapping("acercaDeMi/editar/{id}")

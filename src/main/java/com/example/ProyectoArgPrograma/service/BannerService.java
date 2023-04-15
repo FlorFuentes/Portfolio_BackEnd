@@ -11,8 +11,6 @@ public class BannerService implements IBannerService {
     
     @Autowired
     public BannerRepository banRepo;
-    
-   
 
     @Override
     public List<Banner> verBanner() {
@@ -25,12 +23,17 @@ public class BannerService implements IBannerService {
     }
 
     @Override
-    public void borarBanner(Long id) {
-        banRepo.deleteById(id);
+    public void borrarBanner(Long id) {
+         banRepo.deleteById(id);
     }
 
     @Override
     public void editarBanner(Banner ban) {
         banRepo.save(ban);
     }
+
+  
+   
+
+   
 }

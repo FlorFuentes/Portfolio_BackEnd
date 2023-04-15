@@ -8,6 +8,6 @@ public interface IAcercaDeMiService {
     
     public List<AcercaDeMi> verAcercaDeMi();
     public void crearAcercaDeMi(AcercaDeMi acerca);
-    public void borarAcercaDeMi(Long id);
+    public void borrarAcercaDeMi(Long id);
     public void editarAcercaDeMi(AcercaDeMi acerca);
 }
