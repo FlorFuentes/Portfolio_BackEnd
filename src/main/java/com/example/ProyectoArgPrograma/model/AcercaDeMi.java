@@ -14,6 +14,7 @@ public class AcercaDeMi {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    
     private String fotoPerfil;
     private String sobreMi;
 

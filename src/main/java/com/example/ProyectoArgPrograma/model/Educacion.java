@@ -14,6 +14,7 @@ public class Educacion {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    
     private String descripcion;
     private String institucion;
     private String imgDiploma;

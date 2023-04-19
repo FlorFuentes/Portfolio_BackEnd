@@ -3,6 +3,7 @@ package com.example.ProyectoArgPrograma.service;
 import com.example.ProyectoArgPrograma.model.Habilidades;
 import com.example.ProyectoArgPrograma.repository.HabilidadesRepository;
 import java.util.List;
+import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -29,7 +30,17 @@ public class HabilidadesService implements IHabilidadesService{
 
     @Override
     public void editarHabilidades(Habilidades habi) {
-        habiRepo.save(habi);
+        
+        Optional <Habilidades> hab = habiRepo.findById(habi.getId());
+        
+        if(hab.isPresent()){
+            Habilidades haab = hab.get();
+            haab.setNombre(habi.getNombre());
+            haab.setPorcentaje(habi.getPorcentaje());
+            habiRepo.save(habi);
+        }else{
+            throw new RuntimeException("Habilidades not found for id : " + habi.getId());
+        }
     }
     
 }

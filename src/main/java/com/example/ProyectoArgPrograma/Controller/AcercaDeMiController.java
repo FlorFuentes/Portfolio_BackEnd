@@ -36,7 +36,7 @@ public class AcercaDeMiController {
         acercaServ.borrarAcercaDeMi(id);
     }
     
-    @PutMapping("acercaDeMi/editar/{id}")
+    @PutMapping("acercaDeMi/editar")
     public void editarAcercaDeMi(@RequestBody AcercaDeMi acerca ){
         acercaServ.editarAcercaDeMi(acerca); //Aseguramos que el objeto tenga el ID correcto
         

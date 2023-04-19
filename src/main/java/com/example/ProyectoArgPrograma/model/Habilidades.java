@@ -14,8 +14,8 @@ public class Habilidades {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    
     private String nombre;
-    //Le pongo Long o int??
     private Long porcentaje;
 
     public Habilidades() {
