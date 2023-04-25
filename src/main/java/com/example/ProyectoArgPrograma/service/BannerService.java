@@ -34,7 +34,7 @@ public class BannerService implements IBannerService {
         
         if(bann.isPresent()){
             Banner baan = bann.get();
-            baan.setNombre(ban.getNombre());
+            baan.setNombre( ban.getNombre());
             baan.setImagen(ban.getImagen());
             baan.setTitulo(ban.getTitulo());
             banRepo.save(baan);

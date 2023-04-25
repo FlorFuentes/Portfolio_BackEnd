@@ -20,23 +20,23 @@ public class AcercaDeMiController {
     @Autowired
     private IAcercaDeMiService acercaServ;
     
-    @PostMapping("acercaDeMi/new")
+    @PostMapping("/acercaDeMi/new")
     public void agregarAcercaDeMi( @RequestBody AcercaDeMi acerca){
         acercaServ.crearAcercaDeMi(acerca);
     }
     
-    @GetMapping ("acercaDeMi/ver")
+    @GetMapping ("/acercaDeMi/ver")
     @ResponseBody
     public List<AcercaDeMi>  verAcercaDeMi(){
        return acercaServ.verAcercaDeMi();
     }
     
-    @DeleteMapping("acercaDeMi/delete/{id}")
+    @DeleteMapping("/acercaDeMi/delete/{id}")
     public void borrarAcercaDeMi(@PathVariable  Long id){
         acercaServ.borrarAcercaDeMi(id);
     }
     
-    @PutMapping("acercaDeMi/editar")
+    @PutMapping("/acercaDeMi/editar")
     public void editarAcercaDeMi(@RequestBody AcercaDeMi acerca ){
         acercaServ.editarAcercaDeMi(acerca); //Aseguramos que el objeto tenga el ID correcto
         
