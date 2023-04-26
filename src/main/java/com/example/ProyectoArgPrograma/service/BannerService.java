@@ -25,7 +25,7 @@ public class BannerService implements IBannerService {
 
     @Override
     public void borrarBanner(Long id) {
-         banRepo.deleteById(id);
+        banRepo.deleteById(id);
     }
 
     @Override

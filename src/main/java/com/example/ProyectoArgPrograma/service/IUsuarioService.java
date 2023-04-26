@@ -7,10 +7,12 @@ import java.util.List;
 public interface IUsuarioService {
     
     public List<Usuario> verUsuario();
+    
     public void crearUsuario(Usuario Usu);
+    
     public void borrarUsuario(Long id);
+    
     public void editarUsuario(Usuario Usu);
 
-    //void editarUsuario(Usuario usuarioActualizado);
     
 }

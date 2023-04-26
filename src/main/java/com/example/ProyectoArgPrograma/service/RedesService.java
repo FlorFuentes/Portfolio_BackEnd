@@ -39,7 +39,7 @@ public class RedesService implements IRedesService{
             reed.setNombre(red.getNombre());
             redRepo.save(reed);                
         }else{
-             throw new RuntimeException("Redes not found for id : " + red.getId());
+            throw new RuntimeException("Redes not found for id : " + red.getId());
         }
     }
     

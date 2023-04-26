@@ -40,7 +40,7 @@ public class UsuarioService implements IUsuarioService {
             uusu.setPassword(Usu.getPassword());
             usuRepo.save(uusu);                        
         }else{
-             throw new RuntimeException("Usuario not found for id : " + Usu.getId());
+            throw new RuntimeException("Usuario not found for id : " + Usu.getId());
         }
     }
     
