@@ -32,7 +32,7 @@ public class BannerController {
        return bannerServ.verBanner();
     }
     
-    @DeleteMapping("/banner/delete/{id}")
+    @DeleteMapping("/banner/delete{id}")
     public void borrarBanner(@PathVariable  Long id){
         bannerServ.borrarBanner(id);
     }
