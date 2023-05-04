@@ -23,7 +23,7 @@ public class HabilidadesController {
     
     @PostMapping("/habilidades/new")
     public void agregarHabilidades( @RequestBody Habilidades habi){
-        habiServ.editarHabilidades(habi);
+        habiServ.crearHabilidades(habi);
     }
     
     @GetMapping ("/habilidades/ver")

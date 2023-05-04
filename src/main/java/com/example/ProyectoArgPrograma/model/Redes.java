@@ -15,18 +15,21 @@ public class Redes {
    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
    
-    private String nombre;
-    private String link;
+    private String github;
+    private String telegrema;
+    private String linkedin;
 
     public Redes() {
     }
 
-    public Redes(Long id, String nombre, String link) {
+    public Redes(Long id, String github, String telegrema, String linkedin) {
         this.id = id;
-        this.nombre = nombre;
-        this.link = link;
+        this.github = github;
+        this.telegrema = telegrema;
+        this.linkedin = linkedin;
     }
-    
+
+        
     
     
 }

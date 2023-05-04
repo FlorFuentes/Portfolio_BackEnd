@@ -35,8 +35,9 @@ public class RedesService implements IRedesService{
         
         if(rede.isPresent()){
             Redes reed = rede.get();
-            reed.setLink(red.getLink());
-            reed.setNombre(red.getNombre());
+            reed.setGithub(red.getGithub());
+            reed.setLinkedin(red.getLinkedin());
+            reed.setTelegrema(red.getTelegrema());
             redRepo.save(reed);                
         }else{
             throw new RuntimeException("Redes not found for id : " + red.getId());
