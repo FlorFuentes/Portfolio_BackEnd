@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.example.ProyectoArgPrograma.ProyectoArgProgramaApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 88.915 s - in com.example.ProyectoArgPrograma.ProyectoArgProgramaApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 143.783 s - in com.example.ProyectoArgPrograma.ProyectoArgProgramaApplicationTests
